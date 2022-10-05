@@ -19,7 +19,7 @@ class RestaurantsController < ApplicationController
 
     private
 
-    def find_plant
+    def find_restaurant
         Restaurant.find(params[:id])
     end
     
