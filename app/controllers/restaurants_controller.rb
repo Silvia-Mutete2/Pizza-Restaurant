@@ -8,7 +8,7 @@ class RestaurantsController < ApplicationController
 
     def show
         restaurant = Restaurant.find(params[:id])
-        render json: restaurant, status: :created
+        render json: restaurant,serializer: RestaurantPizzaSerializer, status: :created
     end
 
     def destroy 
